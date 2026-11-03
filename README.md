@@ -79,7 +79,7 @@
 
 ## 开发
 
-需要 Node.js **22.12+**（CI 模板使用 Node.js 24）和 npm。
+需要 Node.js **22.12+**（CI 使用 Node.js 24）和 npm。
 
 ```bash
 npm ci
@@ -98,7 +98,7 @@ tests/                协议、身份、路径、状态及回读校验测试
 docs/                 安装说明与脱敏截图
 ```
 
-发布检查包含单元测试、独立构建、敏感内容规则扫描和包内许可证校验；当前发布凭证不具备 GitHub workflow 写权限，Actions 尚未启用。已提供 [CI 模板](docs/ci-example.yml)，维护者可在具备相应权限后将其放入 `.github/workflows/ci.yml`。自动扫描不能替代人工审阅或完整安全审计。参见 [贡献指南](CONTRIBUTING.md)、[安全说明](SECURITY.md) 和 [版本记录](CHANGELOG.md)。
+发布检查包含单元测试、独立构建、敏感内容规则扫描和包内许可证校验；[GitHub Actions CI](https://github.com/pengqiancheng-sys/ov-web-clipper/actions/workflows/ci.yml) 在 main 推送、PR 和手动触发时运行，使用只读仓库权限，不连接真实 OV、不读取生产密钥、不发布或部署。自动扫描不能替代人工审阅或完整安全审计。参见 [贡献指南](CONTRIBUTING.md)、[安全说明](SECURITY.md) 和 [版本记录](CHANGELOG.md)。
 
 ## 致谢与许可证
 

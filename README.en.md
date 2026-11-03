@@ -20,7 +20,7 @@ Chrome MV3, Chrome 116+. Built against OV 0.5.x, with development integration te
 
 ## Development
 
-Node.js 22.12+ (CI template: Node.js 24):
+Node.js 22.12+ (CI: Node.js 24):
 
 ```bash
 npm ci
@@ -31,4 +31,4 @@ npm run audit:release
 
 Load `dist/` as an unpacked extension. `npm run dev` starts UI development; `?demo=1` enables a labeled, offline mock UI only in development. Demo fixtures are excluded from the production build. See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-GitHub Actions is not enabled: the publishing credential lacks workflow scope. A least-privilege [CI template](docs/ci-example.yml) is included for a maintainer to activate with suitable authorization. Local release checks are available without server credentials.
+[GitHub Actions CI](https://github.com/pengqiancheng-sys/ov-web-clipper/actions/workflows/ci.yml) runs on main pushes, pull requests and manual dispatch. It uses read-only repository permissions, no production credentials or real OV services, and does not deploy.

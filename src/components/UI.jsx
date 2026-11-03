@@ -1,0 +1,6 @@
+import {Inbox,Flame,Archive,GitBranch,Search,Plus,Check,X,Info,ArrowRight,FileText,Bookmark,ChevronLeft,Download,Menu,Settings,ArrowDown,Clock,Link,TriangleAlert} from 'lucide-react';
+const icons={Inbox,Flame,Archive,GitBranch,Search,Plus,Check,X,Info,ArrowRight,FileText,Bookmark,ChevronLeft,Download,Menu,Settings,ArrowDown,Clock,Link,TriangleAlert};
+export function Icon({name,size=20,...props}){const I=icons[name]||FileText;return <I size={size} strokeWidth={1.9} aria-hidden="true" {...props}/>;}
+export function Tag({children,tone='',className=''}){return <span className={`tag ${tone} ${className}`}>{children}</span>;}
+export function Button({children,className='',...props}){return <button className={`brut btn-press ${className}`} {...props}>{children}</button>;}
+export function Flow({status,remote,compact=false}){const local=status==='local',remoteDone=['completed','verified'].includes(remote?.state);return <div className={`flow ${compact?'compact':''}`} aria-label={`采集状态：${remoteDone?'OV处理完成':local?'已保存本地，尚未收录OV':'待本地整理'}`}>{['提取','预览','本地','OV'].map((label,i)=><div className="flow-step" key={label}><span className={`node ${i<2||(local&&i===2)||(remoteDone&&i===3)?'green':i===2?'amber':''}`}>{i<2||(local&&i===2)||(remoteDone&&i===3)?<Icon name="Check" size={13}/>:i===2?'待':'·'}</span>{!compact&&<small>{label}</small>}</div>)}</div>;}

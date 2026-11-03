@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/hanken-grotesk": "^5.3.0",
+    "@fontsource/space-mono": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.4",
+    "@vitejs/plugin-react": "^6.2.1",
+    "defuddle": "^0.19.6",
+    "lucide-react": "^1.67.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.4",
+    "vite": "^8.3.5"
+  },
+  "name": "ov-web-clipper",
+  "version": "0.5.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "build:extension": "vite build && vite build --config vite.capture.config.js && node scripts/package-extension.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "audit:release": "node scripts/audit-release.mjs"
+  },
+  "description": "A local-first Chrome web clipper for OpenViking: capture, review, upload, track processing, and verify retrieval.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pengqiancheng-sys/ov-web-clipper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pengqiancheng-sys/ov-web-clipper/issues"
+  },
+  "homepage": "https://github.com/pengqiancheng-sys/ov-web-clipper#readme"
+}

@@ -4,7 +4,7 @@
 
 一个本地优先的 Chrome 网页采集扩展：提取正文或选中文字 → 预览、编辑与批注 → 确认目标后上传 → 查询处理状态 → 检索并读回原文。无需经过 Obsidian。
 
-[下载安装包](https://github.com/pengqiancheng-sys/ov-web-clipper/releases/latest) · [安装与使用](docs/install.md) · [English](README.en.md) · [反馈问题](https://github.com/pengqiancheng-sys/ov-web-clipper/issues) · [参与讨论](https://github.com/pengqiancheng-sys/ov-web-clipper/discussions)
+[中文图文介绍](https://www.mxiu.cc/ov-web-clipper-open-source/) · [下载安装包](https://github.com/pengqiancheng-sys/ov-web-clipper/releases/latest) · [安装与使用](docs/install.md) · [English](README.en.md) · [反馈问题](https://github.com/pengqiancheng-sys/ov-web-clipper/issues) · [参与讨论](https://github.com/pengqiancheng-sys/ov-web-clipper/discussions)
 
 这是独立社区项目，非 OpenViking 官方产品；需要自备可用的 OpenViking 服务。源码采用 MIT 许可证。
 
